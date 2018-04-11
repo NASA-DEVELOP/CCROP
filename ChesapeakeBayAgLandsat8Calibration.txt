@@ -12,18 +12,19 @@
 //Complete top section in order to adjust script for fields and year as needed.  
 //___________________________________________________________________________________________________________
 
-//Run python script using ArcMap to buffer field polygons 15m and separate into 4 shapefiles based on county
+//Run python script using ArcMap to buffer field polygons 15m inwardand separate into 4 shapefiles 
+//based on county.
 //Upload shapefiles as Fusion Table or as a table Asset in Google Earth Engine. 
 //Shapefiles must be in WGS 1984 as projection
 
 //Import these Fusion Table containing buffered field data for one year
 //Below are the variables for 2014-2015 fields in 4 counties:
 //Queen Annes County and Talbot Counties are combined into one region.
-//replace XXXXX with Fusion Table ID
+//replace XXXXX with Fusion Table ID or import from Assets and name var = region
+//var region = ee.FeatureCollection('ft:XXXXXXXXX', 'geometry'); //buffered field boundaries
 
 //To add a different fusion table, change the ID found after ft: to the one matching your fusion table 
 //ID found under File>About This Table
-
 
 //Specify year when Winter Cover Crop planting took place
 //Landsat 8 imagery is available from 2013 onward.
